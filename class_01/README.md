@@ -46,14 +46,14 @@
 * NIC (Network Interface Card):
 	* eth0 (Ethernet Interface): This is first ethernet interface. Additional Ethernet interfaces would be named eth1, eth2, etc.
 	* lo0 (Loopback Interface)
-
-* Interface:
-	
-	|Cable|NIC|Kernal|Application|
+	* IP4 > [0.0.0.0 = 8 bit 2^32] > IP = Logical Address 
+	* MAC = Physical Address (Unique Hexadecimal Number which is burnt to LAN Card)
+	* VNIC = Virtual Network Interface Card
+	* 
+	|Cable -> |NIC -> |Kernal Namespace -> |User Namepace|
 	|--|--|--|--|
-	|->|->|->|->|
-	|Physical|Interface/Software|||
-
+	|Physical|Interface/Software|eth0|Application|
+* Interface :
 * MTU (Maximum Transation Unit):
 * UDP (User Datagram Protocol):
 * TCP (Transmission Control Protocol):
@@ -83,7 +83,8 @@
 ### dig:
 	* dig <domain>
 
-###
+### for edit hosts file (Domain Parking):
+	* `sudo vi/etc/hosts`
 
 
 
