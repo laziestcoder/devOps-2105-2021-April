@@ -9,37 +9,48 @@
 * Kubernetes
 * AWS (Amazon Web Servic) / MS Azure Cloud / GCP (Google Cloud Platform)
 * Linux, Core Linux, Linux CLI
-* RCA (Root Cause Analysis)
+* **RCA** (Root Cause Analysis): *A root cause is defined as a factor that caused a nonconformance and should be permanently eliminated through process improvement. The root cause is the core issue—the highest-level cause—that sets in motion the entire cause-and-effect reaction that ultimately leads to the problem(s).*
 * IAC (Infrastructure As Code)
 * Cloud Governence
 * Linux Namespace
 	* **User Namespace**: User space is set of locations where normal user processes run. These processes can't access kernel space directly. User space refers to all of the code in an operating system that lives outside of the kernel.
 	* **Kernal Namespace**: The kernel provides abstraction for security, hardware, and internal data structures. Role of kernel space is to manage applications/ processes running in user space. Processes running under the kernel has access to all of the memory, whereas the user space have access only to a limited part of memory.
+  
+   ***N.B: Processes running in user space also don't have access to the kernel space. User space processes can only access a small part of the kernel via an interface exposed by the kernel - the system calls. When a system call is executed the arguments to the call are passed from user space to kernel.***
+
 * OSI Model (Open Systems Interconnection): APS (Application Layer) | TNDP
 	* Application/Software Layer:
 		* **A** : Application Layer
 		* **P** : Presentation Layer
 		* **S** : Session Layer
-	* **T** : Transport Layer -> Heart of OSI Model
+	* **T** : *Transport Layer* -> Heart of OSI Model
 	* Hardware Layer: 
-		* **N** : Network Layer
-		* **D** : Data Link Layer
-		* **P** : Physical Layer
+		* **N** : *Network Layer*
+		* **D** : *Data Link Layer*
+		* **P** : *Physical Layer*
 * Socket Binding
+* Polling
+* Web server
 * Host Namespace 
 * Network Namespace
 * File Namespace
 * ARP (Address Resolution Protocol)
 	* ARP Request
 	* ARP Routing
+	* ARP Cache
+	* ARP Cache Timeout
+	* ARP Response/Reply
+   ***Reverse ARP is being used when host computer/machine don't know their own IP address.***
 * Route Table
-* CIDR (Classless Inter Domain Routing)
+* CIDR (Classless Inter Domain Routing): 
 
 ## Goal:
 * Docker
 * Kubernetes
 * Microservices Architecture Design
 * Scalability
+* CI/CD
+* AWS/GCP/MS AC
 
 
 ## Notes:
@@ -60,7 +71,7 @@
 	|Cable -> |NIC -> |Kernal Namespace -> |User Namepace|
 	|--|--|--|--|
 	|Physical|Interface/Software|eth0|Application|
-* Interface :
+* **Interface** : *It's a device or a system that unrelated entities use to interact. According to this definition, a remote control is an interface between you and a television set, the English language is an interface between two people, and the protocol of behavior enforced in the military is the interface between people of different ranks.*
 * MTU (Maximum Transation Unit):
 * UDP (User Datagram Protocol):
 * TCP (Transmission Control Protocol):
@@ -71,6 +82,7 @@
 	* DNS Cache:
 * TTL (Time To Leave):
 * NAT (Network Address Translation): 
+* CLI (Command Line Interface):
 
 ## Ports:
 	* 53	: DNS
