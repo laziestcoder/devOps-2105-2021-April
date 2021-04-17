@@ -1,23 +1,30 @@
 # class 01 : Introduction to DevOps
 
+
+* **DevOps** : *DevOps is borned to handle scaling and monitoring traffic. DevOps is not for either Development portion or Operations. DevOps is mostly connect to developments and operations. Developments knowledge is more important here. DevOps should know most of the technical knowledges of development phase.* 
+
 ## Topics:
+* CI/CD
+* Docker
+* Kubernetes
+* AWS (Amazon Web Servic) / MS Azure Cloud / GCP (Google Cloud Platform)
 * Linux, Core Linux, Linux CLI
 * RCA (Root Cause Analysis)
 * IAC (Infrastructure As Code)
 * Cloud Governence
 * Linux Namespace
-	* User Namespace 
-	* Kernal Namespace
+	* **User Namespace**: User space is set of locations where normal user processes run. These processes can't access kernel space directly. User space refers to all of the code in an operating system that lives outside of the kernel.
+	* **Kernal Namespace**: The kernel provides abstraction for security, hardware, and internal data structures. Role of kernel space is to manage applications/ processes running in user space. Processes running under the kernel has access to all of the memory, whereas the user space have access only to a limited part of memory.
 * OSI Model (Open Systems Interconnection): APS (Application Layer) | TNDP
 	* Application/Software Layer:
-		* A : Application Layer
-		* P : Presentation Layer
-		* S : Session Layer
-	* T : Transport Layer -> Heart of OSI Model
+		* **A** : Application Layer
+		* **P** : Presentation Layer
+		* **S** : Session Layer
+	* **T** : Transport Layer -> Heart of OSI Model
 	* Hardware Layer: 
-		* N : Network Layer
-		* D : Data Link Layer
-		* P : Physical Layer
+		* **N** : Network Layer
+		* **D** : Data Link Layer
+		* **P** : Physical Layer
 * Socket Binding
 * Host Namespace 
 * Network Namespace
@@ -84,7 +91,8 @@ querying DNS to obtain domain name or IP address mapping
 * ```telnet 52.74.245.254 443``` - connect to a remote host
 * ```tcpdump -i en0 | grep -i "UDP"```
 * ```tcpdump -i eth0 dst 52.74.245.254 443``` - to see traffic
-* ```nc -l 8000``` - NetCat Web server 
+* ```nc -l 8000``` - NetCat Web server
+* ```ipaddr show```
 
 
 
