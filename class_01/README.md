@@ -44,11 +44,15 @@
 	* Physical Address
 * MAC (Media Access Control):
 * NIC (Network Interface Card):
+	* eth0 (Ethernet Interface): This is first ethernet interface. Additional Ethernet interfaces would be named eth1, eth2, etc.
+	* lo0 (Loopback Interface)
+
 * Interface:
 	
-|Cable|NIC|Kernal|Application|
-|--|--|--|--|
-|Physical|Interface/Software|||
+	|Cable|NIC|Kernal|Application|
+	|--|--|--|--|
+	|->|->|->|->|
+	|Physical|Interface/Software|||
 
 * MTU (Maximum Transation Unit):
 * UDP (User Datagram Protocol):
@@ -59,8 +63,7 @@
 	* DNS Resolve:
 	* DNS Cache:
 * TTL (Time To Leave):
-* NAT (Network Address Translation):
-
+* NAT (Network Address Translation): 
 
 ## Ports:
 	* 53	: DNS
