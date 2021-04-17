@@ -56,6 +56,9 @@
 
 * **CIDR (Classless Inter Domain Routing)**: *It is a set of Internet protocol (IP) standards that is used to create unique identifiers for networks and individual devices. The IP addresses allow particular information packets to be sent to specific computers.*
 
+* **Netcat webserver**: *The Netcat utility program supports a wide range of commands to manage networks and monitor the flow of traffic data between systems.*
+
+
 ## Goal:
 * Docker
 * Kubernetes
@@ -88,8 +91,8 @@
 * UDP (User Datagram Protocol):
 * TCP (Transmission Control Protocol):
 * Payload: Payload and Data are same.
-* DNS (Domain Name Sequence):
-	* DNS Query:
+* **DNS** (Domain Name Sequence):
+	* **DNS Query**: *A DNS query (also known as a DNS request) is a demand for information sent from a user's computer (DNS client) to a DNS server. In most cases a DNS request is sent, to ask for the IP address associated with a domain name. There is some Command line tools for DNS query. Such as, ```dig```, ```nslookup```, ```host```*
 	* DNS Resolve:
 	* DNS Cache:
 * TTL (Time To Leave):
@@ -114,7 +117,7 @@
 * ```telnet 52.74.245.254 443``` - connect to a remote host
 * ```tcpdump -i en0 | grep -i "UDP"```
 * ```tcpdump -i eth0 dst 52.74.245.254 443``` - to see traffic
-* ```nc -l 8000``` - NetCat Web server
+* ```nc -l 8000``` - NetCat Web server, netcat server for viewing web request response of localhost:8000 using CLI
 * ```ipaddr show```
 * ```arp -an``` - display the ARP table
 
