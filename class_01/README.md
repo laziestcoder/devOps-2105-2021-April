@@ -74,17 +74,17 @@
 	* 123	: UDP
 ## Commands:
 
-### telnet:
-	* telnet <ip> <port>
-
-### nslookup:
-	* nslookup <domain>
-
-### dig:
-	* dig <domain>
-
-### for edit hosts file (Domain Parking):
-	* `sudo vi/etc/hosts`
+* telnet: ```telnet <ip> <port>```
+* nslookup: querying DNS to obtain domain name or IP address mapping ```nslookup <domain>```
+* dig: querying DNS nameservers for information ```dig <domain>```
+* for edit hosts file (Domain Parking): ```sudo vi/etc/hosts```
+* ```ifconfig``` - show list of interfaces
+* ```tcpdump -i en0``` - data-network packet analyzer/monitoring dns queries
+querying DNS to obtain domain name or IP address mapping
+* ```telnet 52.74.245.254 443``` - connect to a remote host
+* ```tcpdump -i en0 | grep -i "UDP"```
+* ```tcpdump -i eth0 dst 52.74.245.254 443``` - to see traffic
+* ```nc -l 8000``` - NetCat Web server 
 
 
 
