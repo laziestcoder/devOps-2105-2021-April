@@ -37,20 +37,19 @@
 
 ## Notes:
 * IPV4: 
-	
 * IPV6:
- 	
-* IP (Internet Protocol):
-
+ * IP (Internet Protocol):
 * Address:
 	* Logical Address
 	* Physical Address
-
 * MAC (Media Access Control):
 * NIC (Network Interface Card):
 * Interface:
-	|Cable|NIC|Kernal|Application|
-	|Physical|Interface/Software|||
+	
+|Cable|NIC|Kernal|Application|
+|--|--|--|--|
+|Physical|Interface/Software|||
+
 * MTU (Maximum Transation Unit):
 * UDP (User Datagram Protocol):
 * TCP (Transmission Control Protocol):
@@ -61,11 +60,14 @@
 	* DNS Cache:
 * TTL (Time To Leave):
 * NAT (Network Address Translation):
+
+
 ## Ports:
 	* 53	: DNS
 	* 22	: SSH
 	* 80	: TCP
-	* 8080	: 
+	* 8080	: http
+	* 443	: https
 	* 123	: UDP
 ## Commands:
 
